@@ -6,11 +6,9 @@ Drag and Drop files from YBHud Directory into your XCode Project Directory.
 
 ### Usage
 ```
-//Initialize and Display HUD
-YBHud *hud = [[YBHud alloc]initWithHudType:indexPath.row];
-hud.dimAmount = 0.5;
-[hud showInView:self.view animated:YES];
+YBHud *hud = [[YBHud alloc]initWithHudType:indexPath.row]; //Initialization
+hud.dimAmount = 0.5; //Customization
+[hud showInView:self.view animated:YES]; //Display HUD
 
-//Dismiss HUD
-[hud dismissAnimated:YES];
+[hud dismissAnimated:YES]; //Dismiss HUD
 ```
