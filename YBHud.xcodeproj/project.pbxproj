@@ -53,6 +53,7 @@
 		08C28AC01E44AEE90006FA1C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C28ABE1E44AEE90006FA1C /* CustomCell.xib */; };
 		6B5033A61E8E23E0005F39DF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6B5033A51E8E23E0005F39DF /* README.md */; };
 		6B5033A91E8E274F005F39DF /* YBHud.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B5033A81E8E274F005F39DF /* YBHud.gif */; };
+		6B5033AB1E8E2892005F39DF /* LICENCE in Resources */ = {isa = PBXBuildFile; fileRef = 6B5033AA1E8E2892005F39DF /* LICENCE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,6 +145,7 @@
 		08C28ABE1E44AEE90006FA1C /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		6B5033A51E8E23E0005F39DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		6B5033A81E8E274F005F39DF /* YBHud.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YBHud.gif; sourceTree = "<group>"; };
+		6B5033AA1E8E2892005F39DF /* LICENCE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENCE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 		08C286FC1E448CD80006FA1C = {
 			isa = PBXGroup;
 			children = (
+				6B5033AA1E8E2892005F39DF /* LICENCE */,
 				6B5033A51E8E23E0005F39DF /* README.md */,
 				08C287071E448CD80006FA1C /* YBHud */,
 				08C287061E448CD80006FA1C /* Products */,
@@ -382,6 +385,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B5033AB1E8E2892005F39DF /* LICENCE in Resources */,
 				08C287181E448CD90006FA1C /* LaunchScreen.storyboard in Resources */,
 				08C28ABA1E449BD50006FA1C /* ViewController.xib in Resources */,
 				08C28AC01E44AEE90006FA1C /* CustomCell.xib in Resources */,
