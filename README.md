@@ -1,5 +1,8 @@
 # YBHud
-A progress hud by using DGActivityIndicatorView
+A progress hud by using [DGActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView)
+
+### Screenshot
+![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud.gif)
 
 ### Installation
 Drag and Drop files from YBHud Directory into your XCode Project Directory.
