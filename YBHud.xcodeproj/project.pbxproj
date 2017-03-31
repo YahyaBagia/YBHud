@@ -51,6 +51,7 @@
 		08C28ABA1E449BD50006FA1C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C28AB81E449BD50006FA1C /* ViewController.xib */; };
 		08C28ABF1E44AEE90006FA1C /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C28ABD1E44AEE90006FA1C /* CustomCell.m */; };
 		08C28AC01E44AEE90006FA1C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C28ABE1E44AEE90006FA1C /* CustomCell.xib */; };
+		6B5033A61E8E23E0005F39DF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6B5033A51E8E23E0005F39DF /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,6 +141,7 @@
 		08C28ABC1E44AEE90006FA1C /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomCell.h; sourceTree = "<group>"; };
 		08C28ABD1E44AEE90006FA1C /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		08C28ABE1E44AEE90006FA1C /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		6B5033A51E8E23E0005F39DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 		08C286FC1E448CD80006FA1C = {
 			isa = PBXGroup;
 			children = (
+				6B5033A51E8E23E0005F39DF /* README.md */,
 				08C287071E448CD80006FA1C /* YBHud */,
 				08C287061E448CD80006FA1C /* Products */,
 			);
@@ -421,6 +424,7 @@
 				08C287711E448D100006FA1C /* DGActivityIndicatorBallRotateAnimation.m in Sources */,
 				08C287831E448D100006FA1C /* DGActivityIndicatorRotatingSquaresAnimation.m in Sources */,
 				08C2876D1E448D100006FA1C /* DGActivityIndicatorBallGridBeatAnimation.m in Sources */,
+				6B5033A61E8E23E0005F39DF /* README.md in Sources */,
 				08C287821E448D100006FA1C /* DGActivityIndicatorRotatingSandglassAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -574,6 +578,7 @@
 				08C2871E1E448CD90006FA1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

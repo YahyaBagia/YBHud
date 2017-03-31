@@ -137,7 +137,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     hud = [[YBHud alloc]initWithHudType:indexPath.row];
-    hud.dimAmount = 0.5;
+    hud.dimAmount = 0.7;
     [hud showInView:self.view animated:YES];
     [self performSelector:@selector(dismissHud) withObject:nil afterDelay:3.0];
 }
