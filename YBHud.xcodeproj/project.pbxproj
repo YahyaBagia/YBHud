@@ -52,6 +52,7 @@
 		08C28ABF1E44AEE90006FA1C /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C28ABD1E44AEE90006FA1C /* CustomCell.m */; };
 		08C28AC01E44AEE90006FA1C /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 08C28ABE1E44AEE90006FA1C /* CustomCell.xib */; };
 		6B5033A61E8E23E0005F39DF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 6B5033A51E8E23E0005F39DF /* README.md */; };
+		6B5033A91E8E274F005F39DF /* YBHud.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6B5033A81E8E274F005F39DF /* YBHud.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +143,7 @@
 		08C28ABD1E44AEE90006FA1C /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomCell.m; sourceTree = "<group>"; };
 		08C28ABE1E44AEE90006FA1C /* CustomCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		6B5033A51E8E23E0005F39DF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		6B5033A81E8E274F005F39DF /* YBHud.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YBHud.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				08C28AB51E449BBF0006FA1C /* ViewController */,
 				08C2878B1E448D310006FA1C /* YBHud */,
 				08C2871F1E448D0F0006FA1C /* DGActivityIndicatorView */,
+				6B5033A71E8E273E005F39DF /* Images */,
 				08C287141E448CD90006FA1C /* Assets.xcassets */,
 				08C287161E448CD90006FA1C /* LaunchScreen.storyboard */,
 				08C287191E448CD90006FA1C /* Info.plist */,
@@ -312,6 +315,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		6B5033A71E8E273E005F39DF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6B5033A81E8E274F005F39DF /* YBHud.gif */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -374,6 +385,7 @@
 				08C287181E448CD90006FA1C /* LaunchScreen.storyboard in Resources */,
 				08C28ABA1E449BD50006FA1C /* ViewController.xib in Resources */,
 				08C28AC01E44AEE90006FA1C /* CustomCell.xib in Resources */,
+				6B5033A91E8E274F005F39DF /* YBHud.gif in Resources */,
 				08C287151E448CD90006FA1C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
