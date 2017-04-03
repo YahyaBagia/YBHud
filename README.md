@@ -19,4 +19,4 @@ hud.dimAmount = 0.5; //Customization
 iOS 7.0+
 
 ### License
-Apache 2.0 License
+MIT License
