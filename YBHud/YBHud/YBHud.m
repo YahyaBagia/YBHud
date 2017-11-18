@@ -11,6 +11,9 @@
 
 #define kAnimateDuration    0.25
 
+#define kIndicatorWidth     64
+#define kIndicatorHeight    68.5714
+
 @implementation YBHud
 {
     DGActivityIndicatorView *indicator;
@@ -44,7 +47,7 @@
     
     if(_tintColor != nil){ indicator.tintColor = _tintColor; }
     
-    indicator.frame = CGRectMake(0, 0, 64, 68.5714);
+    indicator.frame = CGRectMake(0, 0, kIndicatorWidth, kIndicatorHeight);
     indicator.center = blockView.center;
     [indicator startAnimating];
     [blockView addSubview:indicator];
@@ -64,6 +67,81 @@
     else{
         [view addSubview:blockView];
     }
+    
+    /*Adding constraints*/
+    blockView.translatesAutoresizingMaskIntoConstraints = false;
+    
+    
+    //Trailing
+    NSLayoutConstraint *trailing =[NSLayoutConstraint
+                                   constraintWithItem:blockView
+                                   attribute:NSLayoutAttributeTrailing
+                                   relatedBy:NSLayoutRelationEqual
+                                   toItem:view
+                                   attribute:NSLayoutAttributeTrailing
+                                   multiplier:1.0f
+                                   constant:0.f];
+    
+    //Leading
+    
+    NSLayoutConstraint *leading = [NSLayoutConstraint
+                                   constraintWithItem:blockView
+                                   attribute:NSLayoutAttributeLeading
+                                   relatedBy:NSLayoutRelationEqual
+                                   toItem:view
+                                   attribute:NSLayoutAttributeLeading
+                                   multiplier:1.0f
+                                   constant:0.f];
+    
+    //Bottom
+    NSLayoutConstraint *bottom = [NSLayoutConstraint
+                                  constraintWithItem:blockView
+                                  attribute:NSLayoutAttributeBottom
+                                  relatedBy:NSLayoutRelationEqual
+                                  toItem:view
+                                  attribute:NSLayoutAttributeBottom
+                                  multiplier:1.0f
+                                  constant:0.f];
+    
+    //Top
+    NSLayoutConstraint *top = [NSLayoutConstraint
+                               constraintWithItem: blockView
+                               attribute: NSLayoutAttributeTop
+                               relatedBy: NSLayoutRelationEqual
+                               toItem: view
+                               attribute: NSLayoutAttributeTop
+                               multiplier: 1.0f
+                               constant: 0.f];
+    
+    [view addConstraints:@[trailing, leading, bottom, top]];
+    
+    
+    indicator.translatesAutoresizingMaskIntoConstraints = false;
+    
+    NSLayoutConstraint *width = [NSLayoutConstraint
+                                 constraintWithItem:indicator
+                                 attribute:NSLayoutAttributeWidth
+                                 relatedBy:NSLayoutRelationEqual
+                                 toItem:nil
+                                 attribute:NSLayoutAttributeNotAnAttribute
+                                 multiplier:1.0f
+                                 constant:kIndicatorWidth];
+    
+    NSLayoutConstraint *height = [NSLayoutConstraint
+                                  constraintWithItem:indicator
+                                  attribute:NSLayoutAttributeHeight
+                                  relatedBy:NSLayoutRelationEqual
+                                  toItem:nil
+                                  attribute:NSLayoutAttributeNotAnAttribute
+                                  multiplier:1.0f
+                                  constant:kIndicatorHeight];
+    
+    [[indicator.centerXAnchor constraintEqualToAnchor:blockView.centerXAnchor] setActive:YES];
+    
+    [[indicator.centerYAnchor constraintEqualToAnchor:blockView.centerYAnchor] setActive:YES];
+    
+    [indicator addConstraints:@[width, height]];
+    
 }
 
 -(void)dismiss{

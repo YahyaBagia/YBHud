@@ -16,7 +16,7 @@ hud.dimAmount = 0.5; //Customization
 [hud dismissAnimated:YES]; //Dismiss HUD
 ```
 ### Requirements
-iOS 7.0+
+iOS 9.0+
 
 ### License
 MIT License
