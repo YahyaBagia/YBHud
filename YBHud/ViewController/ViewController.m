@@ -141,21 +141,21 @@
     //Optional Tint Color (Indicator Color)
     //hud.tintColor = [UIColor blackColor];
     
-    //Optional User Interaction
-    //hud.UserInteractionDisabled = YES; (User can interact with background views while HUD is displayed)
+    //Optional User Interaction (User can interact with background views while HUD is displayed)
+    //hud.UserInteractionDisabled = YES;
     
     //Optional HUD Color
     //hud.hudColor = [UIColor yellowColor];
     
     //Optional Dim Amount of HUD
-    //hud.dimAmount = 0.5;
+    //hud.dimAmount = 0.3;
     
     //Display HUD
     [hud showInView:self.view animated:YES];
     
 
     //Dismissing HUD After 5 Seconds
-    [self performSelector:@selector(dismissHud) withObject:nil afterDelay:5.0];
+    [self performSelector:@selector(dismissHud) withObject:nil afterDelay:3.0];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
