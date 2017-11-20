@@ -1,4 +1,5 @@
 # YBHud
+![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_Logo.png)
 A progress hud using [DGActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView)
 
 ### Screenshot
