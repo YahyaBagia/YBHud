@@ -12,7 +12,7 @@ A progress hud using [DGActivityIndicatorView](https://github.com/gontovnik/DGAc
 Drag and Drop files (YBHud.h & YBHud.m) from YBHud Directory into your XCode Project Directory. Add DGActivityIndicatorView in your project.
 
 ### Usage
-```sh
+```
 YBHud *hud = [[YBHud alloc]initWithHudType:DGActivityIndicatorAnimationTypeCookieTerminator]; //Initialization
 
 //Optional Tint Color (Indicator Color)
