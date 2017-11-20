@@ -1,6 +1,7 @@
 # YBHud
+A progress hud using [DGActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView).
+
 ![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_Logo.png)
-A progress hud using [DGActivityIndicatorView](https://github.com/gontovnik/DGActivityIndicatorView)
 
 ### Screenshot
 | ![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_1.gif)| ![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_2.gif)  | ![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_3.gif)|
