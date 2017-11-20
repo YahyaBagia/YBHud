@@ -10,6 +10,7 @@
 		08A3AF661FC2A97F00CBB41E /* YBHud_3.gif in Resources */ = {isa = PBXBuildFile; fileRef = 08A3AF631FC2A97E00CBB41E /* YBHud_3.gif */; };
 		08A3AF671FC2A97F00CBB41E /* YBHud_2.gif in Resources */ = {isa = PBXBuildFile; fileRef = 08A3AF641FC2A97F00CBB41E /* YBHud_2.gif */; };
 		08A3AF681FC2A97F00CBB41E /* YBHud_4.gif in Resources */ = {isa = PBXBuildFile; fileRef = 08A3AF651FC2A97F00CBB41E /* YBHud_4.gif */; };
+		08A3AF6A1FC2ADD700CBB41E /* YBHud_5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 08A3AF691FC2ADD700CBB41E /* YBHud_5.gif */; };
 		08C2870A1E448CD80006FA1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C287091E448CD80006FA1C /* main.m */; };
 		08C2870D1E448CD80006FA1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C2870C1E448CD80006FA1C /* AppDelegate.m */; };
 		08C287151E448CD90006FA1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08C287141E448CD90006FA1C /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		08A3AF631FC2A97E00CBB41E /* YBHud_3.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YBHud_3.gif; sourceTree = "<group>"; };
 		08A3AF641FC2A97F00CBB41E /* YBHud_2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YBHud_2.gif; sourceTree = "<group>"; };
 		08A3AF651FC2A97F00CBB41E /* YBHud_4.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YBHud_4.gif; sourceTree = "<group>"; };
+		08A3AF691FC2ADD700CBB41E /* YBHud_5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = YBHud_5.gif; sourceTree = "<group>"; };
 		08C287051E448CD80006FA1C /* YBHud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YBHud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08C287091E448CD80006FA1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08C2870B1E448CD80006FA1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -331,6 +333,7 @@
 				08A3AF641FC2A97F00CBB41E /* YBHud_2.gif */,
 				08A3AF631FC2A97E00CBB41E /* YBHud_3.gif */,
 				08A3AF651FC2A97F00CBB41E /* YBHud_4.gif */,
+				08A3AF691FC2ADD700CBB41E /* YBHud_5.gif */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -399,6 +402,7 @@
 				08C287181E448CD90006FA1C /* LaunchScreen.storyboard in Resources */,
 				08C28ABA1E449BD50006FA1C /* ViewController.xib in Resources */,
 				08C28AC01E44AEE90006FA1C /* CustomCell.xib in Resources */,
+				08A3AF6A1FC2ADD700CBB41E /* YBHud_5.gif in Resources */,
 				08A3AF671FC2A97F00CBB41E /* YBHud_2.gif in Resources */,
 				6B5033A91E8E274F005F39DF /* YBHud_1.gif in Resources */,
 				08C287151E448CD90006FA1C /* Assets.xcassets in Resources */,

@@ -5,8 +5,8 @@ A progress hud using [DGActivityIndicatorView](https://github.com/gontovnik/DGAc
 | ![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_1.gif)| ![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_2.gif)  | ![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_3.gif)|
 | ------------- |:-------------:| -----:|
 
-| ![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_4.gif)|
-| ------------- |
+|![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_4.gif)|![](https://github.com/YahyaBagia/YBHud/blob/master/YBHud/Images/YBHud_5.gif)|
+| ------------- |  -------------: |
 
 ### Installation
 Drag and Drop files (YBHud.h & YBHud.m) from YBHud Directory into your XCode Project Directory. Add DGActivityIndicatorView in your project.
