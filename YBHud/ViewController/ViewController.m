@@ -136,13 +136,25 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    hud = [[YBHud alloc]initWithHudType:indexPath.row];
+    hud = [[YBHud alloc]initWithHudType:indexPath.row andText:typeNames[indexPath.row]];
+    
     //Optional Tint Color (Indicator Color)
-    //hud.tintColor = [UIColor yellowColor];
-    hud.dimAmount = 0.7;
+    //hud.tintColor = [UIColor blackColor];
+    
+    //Optional User Interaction
+    //hud.UserInteractionDisabled = YES; (User can interact with background views while HUD is displayed)
+    
+    //Optional HUD Color
+    //hud.hudColor = [UIColor yellowColor];
+    
+    //Optional Dim Amount of HUD
+    //hud.dimAmount = 0.5;
+    
+    //Display HUD
     [hud showInView:self.view animated:YES];
     
-    //Dismissing Hud After 5 Seconds
+
+    //Dismissing HUD After 5 Seconds
     [self performSelector:@selector(dismissHud) withObject:nil afterDelay:5.0];
 }
 

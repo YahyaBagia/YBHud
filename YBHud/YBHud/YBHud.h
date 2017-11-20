@@ -12,7 +12,7 @@
 @interface YBHud : NSObject
 
 //Public Methods
--(id)initWithHudType:(DGActivityIndicatorAnimationType)HUDType;
+-(id)initWithHudType:(DGActivityIndicatorAnimationType)HUDType andText:(NSString *)text;
 
 -(void)showInView:(UIView *)view;
 -(void)showInView:(UIView *)view animated:(BOOL)shouldAnimate;
@@ -20,7 +20,13 @@
 -(void)dismissAnimated:(BOOL)shouldAnimate;
 
 //Public Properties
-@property (nonatomic, retain) UIColor *tintColor; // Assign Tint Color of the Loader (Optional) (Default : White)
-@property (nonatomic) CGFloat dimAmount; // Assign Dim Amount of HUD (Optional) (Default : 0.7)
+@property (nonatomic, retain) UIColor *tintColor; // Tint Color of the Loader and Text (Optional) (Default : White)
+@property (nonatomic, retain) UIColor *hudColor;  // Background color of HUD (Optional) (Default : Black)
+@property (nonatomic) CGFloat dimAmount;          // Dim Amount of HUD (Optional) (Default : 0.7)
+@property (nonatomic, retain) NSString *text;
+@property (nonatomic, retain) UIFont *textFont;
+
+//USER INTERACTION
+@property (nonatomic) BOOL UserInteractionDisabled;
 
 @end
