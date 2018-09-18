@@ -83,16 +83,18 @@
         }
         
         blockView.alpha=0.3;
+        __weak __typeof(self)weakSelf = self;
         [UIView animateWithDuration:kAnimateDuration
                 animations:^{
-
-                    indicator.transform = kTransformScaleOriginal;
-                    if(textLabel){
-                        textLabel.transform = kTransformScaleOriginal;
+                    __strong __typeof(weakSelf)strongSelf = weakSelf;
+                    if (strongSelf!=nil) {
+                        strongSelf->indicator.transform = kTransformScaleOriginal;
+                        if (strongSelf->textLabel){
+                            strongSelf->textLabel.transform = kTransformScaleOriginal;
+                        }
+                        strongSelf->blockView.alpha = 1.0;
+                        [view addSubview:strongSelf->blockView];
                     }
-                    
-                    blockView.alpha = 1.0;
-                    [view addSubview:blockView];
                 } completion:^(BOOL finished) { }];
     }
     
@@ -215,18 +217,23 @@
 
 -(void)dismissAnimated:(BOOL)shouldAnimate{
     if(shouldAnimate){
+        __weak __typeof(self)weakSelf = self;
         [UIView animateWithDuration:kAnimateDuration
                          animations:^{
-                             
-                             indicator.transform = kTransformScaleDown;
-                             if(textLabel){
-                                 textLabel.transform = kTransformScaleDown;
+                             __strong __typeof(weakSelf)strongSelf = weakSelf;
+                             if (strongSelf!=nil) {
+                                 strongSelf->indicator.transform = kTransformScaleDown;
+                                 if(strongSelf->textLabel){
+                                     strongSelf->textLabel.transform = kTransformScaleDown;
+                                 }
+                                 strongSelf->blockView.alpha = 0.0;
                              }
-                             
-                             blockView.alpha = 0.0;
                          }
                          completion:^(BOOL finished){
-                             [blockView removeFromSuperview];
+                             __strong __typeof(weakSelf)strongSelf = weakSelf;
+                             if (strongSelf!=nil) {
+                                 [strongSelf->blockView removeFromSuperview];
+                             }
                          }];
     }else{
         [blockView removeFromSuperview];

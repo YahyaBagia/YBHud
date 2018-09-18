@@ -95,6 +95,7 @@
                   @"TripleRings",
                   @"CookieTerminator",
                   @"BallSpinFadeLoader"];
+    typeNames = [typeNames sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
 
     [_tableView registerNib:[UINib nibWithNibName:@"CustomCell" bundle:nil] forCellReuseIdentifier:kIdentifier];
     
@@ -116,12 +117,7 @@
     
     if (cell == nil) {
         NSArray *nib=[[NSBundle mainBundle] loadNibNamed:@"CustomCell" owner:self options:nil];
-        for (id currentObject in nib) {
-            if ([currentObject isKindOfClass:[UITableViewCell class]]) {
-                cell = (CustomCell *)currentObject;
-                break;
-            }
-        }
+        cell = [nib objectAtIndex:0];
     }
     
     cell.lblTitle.text = typeNames[indexPath.row];
